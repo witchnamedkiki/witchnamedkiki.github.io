@@ -65,6 +65,11 @@ footer {
   margin: 10px;
 }
 
+footer a {
+  color: #3caea6;
+  text-decoration: underline;
+}
+
 .page-container {
   display: inline-block; /* shrink-wrap width */
   box-sizing: border-box;
@@ -80,11 +85,6 @@ a {
 
 a:hover {
   color: #5500fe;
-}
-
-footer a {
-  color: #3caea6;
-  text-decoration: underline;
 }
 
 nav a.active {
