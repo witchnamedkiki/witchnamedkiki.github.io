@@ -46,3 +46,16 @@ fetch("sidebar.html")
     };
     document.body.appendChild(playerScript);
   });
+
+// Inject footer into the #footer-container div
+fetch("footer.html")
+  .then((response) => response.text())
+  .then((data) => {
+    const container = document.getElementById("footer-container");
+    if (container) {
+      container.innerHTML = data;
+    } else {
+      console.error("Footer container not found.");
+    }
+  })
+  .catch((error) => console.error("Error loading footer:", error));
