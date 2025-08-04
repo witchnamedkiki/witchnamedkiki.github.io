@@ -16,3 +16,33 @@ function highlightActiveLink() {
     }
   });
 }
+
+// Inject sidebar.html
+fetch("sidebar.html")
+  .then((res) => res.text())
+  .then((html) => {
+    document.getElementById("sidebar-container").innerHTML = html;
+
+    // Load quote.js
+    const quoteScript = document.createElement("script");
+    quoteScript.src = "quote.js";
+    document.body.appendChild(quoteScript);
+
+    // Load weather widget
+    if (!document.getElementById("weatherwidget-io-js")) {
+      const weatherScript = document.createElement("script");
+      weatherScript.id = "weatherwidget-io-js";
+      weatherScript.src = "https://weatherwidget.io/js/widget.min.js";
+      document.body.appendChild(weatherScript);
+    }
+
+    // Load win95 player script
+    const playerScript = document.createElement("script");
+    playerScript.src = "win95-player.js";
+    playerScript.onload = () => {
+      if (typeof initWin95Player === "function") {
+        initWin95Player();
+      }
+    };
+    document.body.appendChild(playerScript);
+  });
