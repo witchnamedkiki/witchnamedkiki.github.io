@@ -83,7 +83,13 @@ a:hover {
 }
 
 footer a {
-  color: #3cae6f;
+  color: #3caea6;
+  text-decoration: underline;
+}
+
+nav a.active {
+  color: #5500fe; /* or whatever color you want */
+  font-weight: bold;
   text-decoration: underline;
 }
 
