@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="http://fonts.googleapis.com/css?family=Megrim|Lato"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my murder she wrote fanpage</title>
+  </head>
+  <body>
+    <div class="page-container">
+      <header><div id="header-container"></div></header>
+      <main>
+        <div id="sidebar">
+          <div class="title">
+            <h1 class="title-text">Synopsis</h1>
+            <img class="title-image" src="assets\images\title.png" alt="x" />
+          </div>
+          <div class="box">
+            Mystery writer and amateur detective Jessica Fletcher - a
+            down-to-earth, middle-aged widow - ferrets out the criminals in
+            idyllic Cabot Cove, Maine, which apparently is the murder capital of
+            the United States.
+          </div>
+
+          <div class="title">
+            <h1 class="title-text">Did you know?</h1>
+            <img class="title-image" src="assets\images\title.png" alt="x" />
+          </div>
+          <div class="box">
+            <p id="fact"></p>
+            <a id="source" href="#" target="_blank">Source</a>
+            <script src="quote.js"></script>
+          </div>
+
+          <div class="title">
+            <h1 class="title-text">Weather</h1>
+            <img class="title-image" src="assets\images\title.png" alt="x" />
+          </div>
+          <div class="box">
+            <a
+              class="weatherwidget-io"
+              href="https://forecast7.com/en/44d21n69d06/camden/?unit=us"
+              data-label_1="Cabot Cove"
+              data-label_2="WEATHER"
+              data-font="Lato"
+              data-mode="Current"
+              data-days="3"
+              data-theme="marine"
+              >Cabot Cove WEATHER</a
+            >
+            <script>
+              !(function (d, s, id) {
+                var js,
+                  fjs = d.getElementsByTagName(s)[0];
+                if (!d.getElementById(id)) {
+                  js = d.createElement(s);
+                  js.id = id;
+                  js.src = "https://weatherwidget.io/js/widget.min.js";
+                  fjs.parentNode.insertBefore(js, fjs);
+                }
+              })(document, "script", "weatherwidget-io-js");
+            </script>
+          </div>
+          <div class="title">
+            <h1 class="title-text">Music</h1>
+            <img class="title-image" src="assets\images\title.png" alt="x" />
+          </div>
+          <div class="box">
+            <div class="win95-player">
+                            <h4>Theme Song</h4>
+              <audio
+                id="player"
+                src="assets\Murder She Wrote - Remastered.mp3"
+              ></audio>
+              <div class="controls">
+                <button onclick="play()">▶</button>
+                <button onclick="pause()">⏸</button>
+                <button onclick="stop()">⏹</button>
+              </div>
+              <label style="margin-top: 10px; display: block">Volume:</label>
+              <input
+                type="range"
+                id="volumeSlider"
+                min="0"
+                max="1"
+                step="0.01"
+                value="1"
+              />
+            </div>
+          </div>
+        </div>
+        <div id="content">
+          <div class="title">
+            <h1 class="title-text">Links and Resources</h1>
+            <img class="title-image" src="assets\images\title.png" alt="x" />
+          </div>
+          <div class="box">
+            <h2>resources</h2>
+            <ul>
+                <li><a href="https://www.imdb.com/title/tt0086765/">IMDb</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Murder,_She_Wrote">Wikipedia</a></li>
+            
+        </li>
+                    <li><a href="https://www.reddit.com/r/murdershewrote/">Reddit</a></li>
+
+                </ul><hr></hr>
+            <h2>other Murder She Wrote sites</h2>
+            <ul>
+                <li><a href="https://murdershewroteshewrote.com/">Murder, She Wrote, She Wrote</a></li>
+            <li><a href="https://murdershewatched.com/murder-she-wrote/">Murder, She Watched</a></li>
+            
+        </li>
+                    <li><a href="https://murdersheblogged1.wordpress.com/">Murder, She Blogged</a></li>
+
+                </ul>
+                <hr></hr>
+            <div class="image-wrapper">
+              <a href="assets\images\library.jpg" target="_blank"><img
+                src="assets\images\library.jpg"
+                alt="jessica fletcher in a library"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        Layout made by
+        <a href="http://itinerae.neocities.org" target="_blank">Itinerae.</a>
+        Image from
+        <a href="https://www.imdb.com/title/tt0086765" target="_blank">IMDb.</a>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="win95-player.js"></script>
+  </body>
+</html>

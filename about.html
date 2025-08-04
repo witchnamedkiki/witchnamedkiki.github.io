@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="http://fonts.googleapis.com/css?family=Megrim|Lato"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my murder she wrote fanpage</title>
+  </head>
+  <body>
+    <div class="page-container">
+    <header><div id="header-container"></div></header>
+      <main>
+         <div id="sidebar">
+          <div class="title">
+            <h1 class="title-text">Synopsis</h1>
+            <img class="title-image" src="assets\images\title.png" alt="x" />
+          </div>
+          <div class="box">
+            Mystery writer and amateur detective Jessica Fletcher - a
+            down-to-earth, middle-aged widow - ferrets out the criminals in
+            idyllic Cabot Cove, Maine, which apparently is the murder capital of
+            the United States.
+          </div>
+
+          <div class="title">
+            <h1 class="title-text">Did you know?</h1>
+            <img class="title-image" src="assets\images\title.png" alt="x" />
+          </div>
+          <div class="box">
+            <p id="fact"></p>
+            <a id="source" href="#" target="_blank">Source</a>
+            <script src="quote.js"></script>
+          </div>
+
+          <div class="title">
+            <h1 class="title-text">Weather</h1>
+            <img class="title-image" src="assets\images\title.png" alt="x" />
+          </div>
+          <div class="box">
+            <a
+              class="weatherwidget-io"
+              href="https://forecast7.com/en/44d21n69d06/camden/?unit=us"
+              data-label_1="Cabot Cove"
+              data-label_2="WEATHER"
+              data-font="Lato"
+              data-mode="Current"
+              data-days="3"
+              data-theme="marine"
+              >Cabot Cove WEATHER</a
+            >
+            <script>
+              !(function (d, s, id) {
+                var js,
+                  fjs = d.getElementsByTagName(s)[0];
+                if (!d.getElementById(id)) {
+                  js = d.createElement(s);
+                  js.id = id;
+                  js.src = "https://weatherwidget.io/js/widget.min.js";
+                  fjs.parentNode.insertBefore(js, fjs);
+                }
+              })(document, "script", "weatherwidget-io-js");
+            </script>
+          </div>
+          <div class="title">
+            <h1 class="title-text">Music</h1>
+            <img class="title-image" src="assets\images\title.png" alt="x" />
+          </div>
+          <div class="box">
+            <div class="win95-player">
+                            <h4>Theme Song</h4>
+              <audio
+                id="player"
+                src="assets\Murder She Wrote - Remastered.mp3"
+              ></audio>
+              <div class="controls">
+                <button onclick="play()">▶</button>
+                <button onclick="pause()">⏸</button>
+                <button onclick="stop()">⏹</button>
+              </div>
+              <label style="margin-top: 10px; display: block">Volume:</label>
+              <input
+                type="range"
+                id="volumeSlider"
+                min="0"
+                max="1"
+                step="0.01"
+                value="1"
+              />
+            </div>
+          </div>
+        </div>
+        <div id="content">
+          <div class="title">
+            <h1 class="title-text">Image</h1>
+            <img
+              class="title-image"
+              src="assets\images\title.png"
+              alt="x"
+            />
+          </div>
+          <div class="box">
+            <div class="image-wrapper">
+              <a href="assets\images\mag-glass.jpg" target="_blank"><img
+                src="assets\images\mag-glass.jpg"
+                width="50%"
+                alt="jessica with magnifying glass"
+              /></a>
+            </div>
+          </div>
+
+          <div class="title">
+            <h1 class="title-text">About</h1>
+            <img
+              class="title-image"
+              src="assets\images\title.png"
+              alt="x"
+            />
+          </div>
+          <div class="box">
+Murder, She Wrote is an American crime drama television series, created by Peter S. Fischer, Richard Levinson and William Link, starring Angela Lansbury, and produced and distributed by Universal Television for the CBS network. The series focuses on the life of Jessica Fletcher, a mystery writer and amateur detective, who becomes involved in solving murders that take place in the fictional town of Cabot Cove, Maine, across the United States and abroad. The program ran for 12 seasons from September 30, 1984, to May 19, 1996, for a total of 264 episodes and included amongst its recurring cast Tom Bosley, William Windom and Ron Masak.
+<br></br>
+The series was a ratings hit during its broadcast, becoming a staple of CBS Sunday night TV schedule for around a decade, while achieving distinction as one of the most successful and longest-running television shows in history, averaging 25 million viewers per week in its prime. In syndication, the series is still highly successful and popular throughout the world. 
+<br></br>
+For her role on the program, Lansbury was nominated for ten Golden Globes, winning four, along with nominations for 12 Emmy Awards, earning her the record for the most Golden Globe nominations and wins for Best Actress in a television drama series and the most Emmy nominations for Outstanding Lead Actress in a Drama Series. The series itself also received three Emmy nominations for Outstanding Drama Series, and six Golden Globe nominations in the same category, with two major wins.
+<br></br>
+After the series finished in 1996, four television films were released from 1997 to 2003. Two point-and-click video games were released for PC: one in 2009, and a sequel in 2012. A spin-off book series continues publication as of 2025.
+          </div>
+        </div>
+      </main>
+      <footer>
+        Layout made by
+        <a href="http://itinerae.neocities.org" target="_blank">Itinerae.</a>
+        Image from
+        <a href="https://www.imdb.com/title/tt0086765" target="_blank">IMDb.</a>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="win95-player.js"></script>
+  </body>
+</html>

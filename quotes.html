@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="http://fonts.googleapis.com/css?family=Megrim|Lato"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my murder she wrote fanpage</title>
+  </head>
+  <body>
+    <div class="page-container">
+    <header><div id="header-container"></div></header>
+      <main>
+                <div id="sidebar">
+          <div class="title">
+            <h1 class="title-text">Synopsis</h1>
+            <img class="title-image" src="assets\images\title.png" alt="x" />
+          </div>
+          <div class="box">
+            Mystery writer and amateur detective Jessica Fletcher - a
+            down-to-earth, middle-aged widow - ferrets out the criminals in
+            idyllic Cabot Cove, Maine, which apparently is the murder capital of
+            the United States.
+          </div>
+
+          <div class="title">
+            <h1 class="title-text">Did you know?</h1>
+            <img class="title-image" src="assets\images\title.png" alt="x" />
+          </div>
+          <div class="box">
+            <p id="fact"></p>
+            <a id="source" href="#" target="_blank">Source</a>
+            <script src="quote.js"></script>
+          </div>
+
+          <div class="title">
+            <h1 class="title-text">Weather</h1>
+            <img class="title-image" src="assets\images\title.png" alt="x" />
+          </div>
+          <div class="box">
+            <a
+              class="weatherwidget-io"
+              href="https://forecast7.com/en/44d21n69d06/camden/?unit=us"
+              data-label_1="Cabot Cove"
+              data-label_2="WEATHER"
+              data-font="Lato"
+              data-mode="Current"
+              data-days="3"
+              data-theme="marine"
+              >Cabot Cove WEATHER</a
+            >
+            <script>
+              !(function (d, s, id) {
+                var js,
+                  fjs = d.getElementsByTagName(s)[0];
+                if (!d.getElementById(id)) {
+                  js = d.createElement(s);
+                  js.id = id;
+                  js.src = "https://weatherwidget.io/js/widget.min.js";
+                  fjs.parentNode.insertBefore(js, fjs);
+                }
+              })(document, "script", "weatherwidget-io-js");
+            </script>
+          </div>
+          <div class="title">
+            <h1 class="title-text">Music</h1>
+            <img class="title-image" src="assets\images\title.png" alt="x" />
+          </div>
+          <div class="box">
+            <div class="win95-player">
+                            <h4>Theme Song</h4>
+              <audio
+                id="player"
+                src="assets\Murder She Wrote - Remastered.mp3"
+              ></audio>
+              <div class="controls">
+                <button onclick="play()">▶</button>
+                <button onclick="pause()">⏸</button>
+                <button onclick="stop()">⏹</button>
+              </div>
+              <label style="margin-top: 10px; display: block">Volume:</label>
+              <input
+                type="range"
+                id="volumeSlider"
+                min="0"
+                max="1"
+                step="0.01"
+                value="1"
+              />
+            </div>
+          </div>
+        </div>
+        <div id="content">
+                    <div class="title">
+            <h1 class="title-text">Image</h1>
+            <img
+              class="title-image"
+              src="assets\images\title.png"
+              alt="x"
+            />
+          </div>
+          <div class="box">
+            <div class="image-wrapper">
+              <a href="assets\images\flowers.jpg"><img
+                src="assets\images\flowers.jpg"
+                width="200"
+                alt="jessica at her typewriter"
+              /></a>
+            </div>
+          </div>
+<div class="title">
+  <h1 class="title-text">jessica quotes</h1>
+            <img
+              class="title-image"
+              src="assets\images\title.png"
+              alt="x"
+            /></a>
+</div>
+<div class="box">
+  <p class="quote">“You can never nudge the moral compass far from its true north without losing something vital.”</p>
+  <p class="quote-source">— TV Movie, "A Story to Die For"</p>
+  
+  <p class="quote">“There are three things you can never have enough of in life, Lieutenant: chocolate, friends, and the theater.” </p>
+  <p class="quote-source">—Season 8, Episode 11 “Danse Diabolique”</p>
+
+  <p class="quote">“Back home, we have a saying: flowers that bloom too quickly are fair game for a late frost.”</p> 
+  <p class="quote-source">—Pilot, “The Murder of Sherlock Holmes”</p>
+
+  <p class="quote">“I don't want to alarm you, but something very sinister is going on here.” <p class="quote-source">—Season 2, Episode 6 “Reflections of the Mind”</p>
+
+  <p class="quote">“Back in Cabot Cove, the only thing with claws are the lobsters—and we eat them.” 
+  <p class="quote-source">—Pilot, “The Murder of Sherlock Holmes”</p>
+
+  <p class="quote">“I don't want to alarm you, but something very sinister is going on here.” 
+  <p class="quote-source">—Season 2, Episode 6 “Reflections of the Mind”</p>
+
+  <p class="quote">“Just as I suspected. When under stress, the English always head for the teapot.”
+  <p class="quote-source">—Season 1, Episode 6 “It’s a Dog’s Life”</p>
+
+  <p class="quote">“We've only had one killer in our family. 1777, I believe—and the Redcoats shot first.”
+  <p class="quote-source">—Season 1, Episode 4 “Birds of a Feather”</p>
+  
+  <p class="quote">“It’s hard to know yourself—let alone another person.”
+  <p class="quote-source">—Season 1, Episode 13 “Broadway Malady”</p>
+</div>
+</main>
+      <footer>
+        Layout made by
+        <a href="http://itinerae.neocities.org" target="_blank">Itinerae.</a>
+        Image from
+        <a href="https://www.imdb.com/title/tt0086765" target="_blank">IMDb.</a>
+      </footer>
+    <script src="script.js"></script>
+    <script src="win95-player.js"></script>
+  </body>
+</html>
