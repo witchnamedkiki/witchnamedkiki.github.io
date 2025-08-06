@@ -1,3 +1,7 @@
+* {
+  cursor: url(assets/images/MSW_MagnifyingGlass.png), auto;
+}
+
 body {
   background-image: url(assets/images/water.gif);
   background-repeat: repeat;
@@ -327,6 +331,11 @@ main {
   box-shadow: inset -2px -2px #fff, inset 2px 2px #666;
   padding: 10px;
   width: 100%px;
+  cursor: url(assets/images/MSW_MagnifyingGlass.png), auto;
+}
+
+.win95-player * {
+  cursor: url(assets/images/MSW_MagnifyingGlass.png), auto;
 }
 
 .controls {
